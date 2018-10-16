@@ -22,6 +22,12 @@ export default ({ playlists }) => (
         </section>
         <hr />
         <section>
+          <h4 className="menu-item active">
+            <Link to="/stations">STATIONS</Link>
+          </h4>
+        </section>
+        <hr />
+        <section>
           <h4 className="text-muted">PLAYLISTS</h4>
           <ul className="list-unstyled">
             {
