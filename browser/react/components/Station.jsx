@@ -2,14 +2,17 @@ import React from 'react';
 import Songs from './Songs';
 
 export default function (props) {
-    console.log(props)
+  const genreName = props.genreName;
+  const songs = props.songs;
+  const currentSong = props.currentSong;
+  const start = props.start;
   return (
     <div>
-      <h3>{props.genreName} Station</h3>
-      <Songs 
-        songs={props.songs} 
-        currentSong={props.currentSong} 
-        start={props.start}
+      <h3>{ genreName } Station</h3>
+      <Songs
+        songs={songs}
+        currentSong={currentSong}
+        start={start}
       />
     </div>
   );

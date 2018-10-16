@@ -33,8 +33,6 @@ export default () => (
         <Route path="/playlists/new" component={NewPlaylistContainer} />
         <Route path="/playlists/:id" component={PlaylistContainer} />
         <Route path="/lyrics" component={LyricsContainer} />
-        
-        
 
         <RouteHook exact path="/stations/:genreName" component={SingleContainer} onEnter={onStationsEnter}/>
         <RouteHook path="/stations" component={StationsContainer} onEnter={onStationsEnter} />
